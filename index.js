@@ -9,7 +9,7 @@ const startSock = () => {
         auth: state
     })
 
-    sock.ev.on ('connection.update', function(update, connection2) {
+    sock.ev.on ('connection.update', function(update, connection) {
         let _a, _b;
         let connection = update.connection, lastDisconnect = update.lastDisconnect;
         if (connection == 'close') {
