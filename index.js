@@ -1,5 +1,5 @@
-const {DisconnectReason, useSingleFileAuthState} = require('@adiwajshing/baileys');
-const makeWASocket = require ('@whiskeysockets/baileys').default;
+const {DisconnectReason, useSingleFileAuthState} = require('baileys');
+const makeWASocket = require ('baileys').default;
 const axios = require ('axios');
 
 const startSock = () => {
