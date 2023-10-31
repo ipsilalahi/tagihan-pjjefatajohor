@@ -1,5 +1,5 @@
-const {DisconnectReason, useSingleFileAuthState} = require('baileys');
-const makeWASocket = require ('baileys').default;
+const {DisconnectReason, useSingleFileAuthState} = require('@adiwajshing/baileys');
+const makeWASocket = require ('@whiskeysockets/baileys').default;
 const axios = require ('axios');
 
 const startSock = () => {
@@ -26,7 +26,7 @@ const startSock = () => {
     });
 
     sock.ev.on ('creds.update', saveState);
-
+console.log ("Masuk ..................");
     sock.ev.on ('messages.upsert', async m => {
         const msg = m. messages[0];
 
